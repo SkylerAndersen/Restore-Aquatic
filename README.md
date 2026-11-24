@@ -36,4 +36,4 @@ Mostly, we are all excited to participate. We have not divided tasks based on ca
 
 ## Video Demo
 
-Here is the [Video Demo](https://drive.google.com/file/d/13IDRW6ZU4FTa2baJz6VXUYGoc0HDNo_M/view?usp=sharing) of the current state of the project gameplay.
+Here is the [Video Demo](https://drive.google.com/file/d/13IR1fAurZLg_EeHpDRKkDTP6IpLTOaok/view?usp=sharing) of the current state of the project gameplay.
