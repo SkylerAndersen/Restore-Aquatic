@@ -1,42 +1,35 @@
-# Restore Aquatic Essential Source
+# Restore Aquatic 3D Game Project
 
-Welcome to Restore Aquatic. Thusfar, builds do not exist. If you are looking to beta-test, you will not find that here.
+## Team Name
 
-# Developers / Maintainers
+***The Conservationists***
 
-## Preliminary Setup
+## Team Members
 
-If you are a developer / maintainer, then ensure that you have done the following.
+***Skyler (S. Andersen), T (K. Truong), and Nappie (K. Waterford)***
 
-1. Installed the latest Unity Hub Version.
-2. Created a new Unity "Universal 3D" project locally on your computer.
-3. Set the Project Editor Version to 6000.6.2f1
-    3a. This is important because older versions might now have some of the
-        version control friendly defaults we want.
-4. Named your project "Restore Aquatic"
-5. Clicked "Create Project"
+## Current Target / Project Breif
 
-## How do I connect to the GitHub?
+Currently we are targeting a 3D ocean exploration game, with recurring predators. The main game loop will involve collection trash while in amongst fish, and avoiding a shark.
 
-Ensure that you have requested contributor permissions. You will need these when you have changes to push. For now, you can setup the environment without permissions.
+Concrete Components (non-exhaustive):
+ - Menu System
+ - Player Movement
+ - Scoreboard
+ - Intelligent Shark
+ - Randomized Trash Spawner (collectables)
+ - Ocean and Other Environments
+ - Ambient Audio
+ - Danger-Telegraphing Audio
+ - Action Soundeffects
 
-1. `cd` into the directory that your Unity Project is in.
-   1a. It MUST be the project root directory that directly contains directories:
-	I.   Assets
-	II.  Logs
-	III. ProjectSettings
-	etc...
+## Division of Labor
 
-2. Run the following to initialize your repository, and pull the remote changes to overwrite those defaults in your local project directory.
+Mostly, we are all excited to participate. We have not divided tasks based on category, but we are thusfar claiming individial components that intrigue us. The major components have been divided as follows:
 
-```
-git init
-git remote add origin https://github.com/SkylerAndersen/Restore-Aquatic.git
-git fetch
-git checkout -f -B main origin/main
-```
-
-3. Test what was effectively a `pull --force` command. Do you see logs for commits you didn't make?
-   3a. Try: `git log` to check these logs
-
-If everything worked, you are all set up!
+ 1. Skyler (S. Andersen)
+	NPC Movement Controllers (Intelligent Shark and such)
+ 2. T (K. Truong)
+	Player Controller (Player Movement)
+ 3. Nappie (K. Waterford)
+	Item Spawning (Randomized Trash Spawner for Collectables)
