@@ -17,11 +17,13 @@ public class CharacterFollow : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void LateUpdate()
     {
+        if (player == null) return;
+
         transform.rotation = UnityEngine.Quaternion.Euler(first, second, third);
         UnityEngine.Vector3 target_pos = new UnityEngine.Vector3(player.position.x + x, player.position.y + y, player.position.z + z);
-        target_pos = UnityEngine.Vector3.Slerp(transform.position, target_pos, follow_speed * Time.fixedDeltaTime);
-        transform.position = target_pos;
+        float blend = 1f - Mathf.Exp(-follow_speed * Time.deltaTime);
+        transform.position = UnityEngine.Vector3.Lerp(transform.position, target_pos, blend);
     }
 }

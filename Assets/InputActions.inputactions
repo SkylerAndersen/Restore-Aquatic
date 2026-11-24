@@ -18,12 +18,12 @@
                 },
                 {
                     "name": "SpaceShift",
-                    "type": "Button",
+                    "type": "Value",
                     "id": "18c7db7a-5ebb-4159-a388-30484b46f90a",
-                    "expectedControlType": "",
+                    "expectedControlType": "Axis",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": false,
+                    "initialStateCheck": true,
                     "priority": 0
                 }
             ],
@@ -87,7 +87,7 @@
                     "name": "1D Axis",
                     "id": "7f800c4e-5c6a-486a-99a9-0db4ab21b6bc",
                     "path": "1DAxis",
-                    "interactions": "Hold",
+                    "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "SpaceShift",
